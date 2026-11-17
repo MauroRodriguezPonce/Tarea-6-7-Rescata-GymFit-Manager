@@ -1,0 +1,99 @@
+/* PALETA DE 4 COLORES
+   Azul principal  #1F4E79  -> acción principal, títulos, cabecera de tabla
+   Fondo claro     #F5F7FA  -> fondo general (blanco #FFFFFF solo en paneles)
+   Texto oscuro    #222222  -> todo el texto (contraste alto)
+   Rojo            #C0392B  -> solo acciones destructivas y errores          */
+
+.root {
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #222222;
+    -fx-background-color: #F5F7FA;
+}
+
+.label { -fx-text-fill: #222222; }
+
+.titulo {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1F4E79;
+}
+
+.panel-form {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #D5DBE3;
+    -fx-border-width: 0 1 0 0;
+}
+
+.toolbar-principal {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #D5DBE3;
+    -fx-border-width: 0 0 1 0;
+}
+
+.text-field, .combo-box, .date-picker {
+    -fx-background-radius: 4;
+    -fx-border-radius: 4;
+    -fx-border-color: #8A97A8;
+}
+.text-field:focused, .combo-box:focused, .date-picker:focused {
+    -fx-border-color: #1F4E79;
+    -fx-border-width: 2;
+}
+
+/* Acción principal: relleno azul, texto blanco, negrita */
+.btn-primario {
+    -fx-background-color: #1F4E79;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-padding: 9 24 9 24;
+    -fx-background-radius: 4;
+    -fx-cursor: hand;
+}
+.btn-primario:hover { -fx-background-color: #173C5E; }
+
+/* Acción secundaria: solo borde */
+.btn-secundario {
+    -fx-background-color: transparent;
+    -fx-text-fill: #1F4E79;
+    -fx-border-color: #1F4E79;
+    -fx-border-radius: 4;
+    -fx-padding: 9 18 9 18;
+    -fx-cursor: hand;
+}
+
+/* Acción destructiva: discreta, separada y en rojo */
+.btn-peligro {
+    -fx-background-color: transparent;
+    -fx-text-fill: #C0392B;
+    -fx-border-color: #C0392B;
+    -fx-border-radius: 4;
+    -fx-padding: 9 14 9 14;
+    -fx-cursor: hand;
+}
+.btn-peligro:hover { -fx-background-color: #FBEAE8; }
+
+.item-peligro .label { -fx-text-fill: #C0392B; }
+
+/* Mensaje de error: borde rojo + texto oscuro */
+.mensaje-error {
+    -fx-background-color: #FBEAE8;
+    -fx-border-color: #C0392B;
+    -fx-border-width: 0 0 0 4;
+    -fx-padding: 10 12 10 12;
+    -fx-text-fill: #222222;
+}
+
+/* Tabla */
+.table-view .column-header-background { -fx-background-color: #1F4E79; }
+.table-view .column-header, .table-view .filler { -fx-background-color: #1F4E79; }
+.table-view .column-header .label { -fx-text-fill: #FFFFFF; -fx-font-weight: bold; }
+.table-row-cell:selected { -fx-background-color: #D6E4F2; }
+.table-row-cell:selected .text { -fx-fill: #222222; }
+
+.barra-estado {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #D5DBE3;
+    -fx-border-width: 1 0 0 0;
+    -fx-padding: 6 16 6 16;
+}
