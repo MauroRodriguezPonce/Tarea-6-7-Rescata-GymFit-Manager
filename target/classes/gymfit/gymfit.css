@@ -16,7 +16,7 @@
 .titulo {
     -fx-font-size: 20px;
     -fx-font-weight: bold;
-    -fx-text-fill: #1F4E79;
+    -fx-text-fill: #ef8113;
 }
 
 .panel-form {
@@ -37,26 +37,26 @@
     -fx-border-color: #8A97A8;
 }
 .text-field:focused, .combo-box:focused, .date-picker:focused {
-    -fx-border-color: #1F4E79;
+    -fx-border-color: #ef8113;
     -fx-border-width: 2;
 }
 
 /* Acción principal: relleno azul, texto blanco, negrita */
 .btn-primario {
-    -fx-background-color: #1F4E79;
+    -fx-background-color: #ef8113;
     -fx-text-fill: #FFFFFF;
     -fx-font-weight: bold;
     -fx-padding: 9 24 9 24;
     -fx-background-radius: 4;
     -fx-cursor: hand;
 }
-.btn-primario:hover { -fx-background-color: #173C5E; }
+.btn-primario:hover { -fx-background-color: #ef8113; }
 
 /* Acción secundaria: solo borde */
 .btn-secundario {
     -fx-background-color: transparent;
-    -fx-text-fill: #1F4E79;
-    -fx-border-color: #1F4E79;
+    -fx-text-fill: #ef8113;
+    -fx-border-color: #ef8113;
     -fx-border-radius: 4;
     -fx-padding: 9 18 9 18;
     -fx-cursor: hand;
@@ -85,8 +85,8 @@
 }
 
 /* Tabla */
-.table-view .column-header-background { -fx-background-color: #1F4E79; }
-.table-view .column-header, .table-view .filler { -fx-background-color: #1F4E79; }
+.table-view .column-header-background { -fx-background-color: #ef8113; }
+.table-view .column-header, .table-view .filler { -fx-background-color: #ef8113; }
 .table-view .column-header .label { -fx-text-fill: #FFFFFF; -fx-font-weight: bold; }
 .table-row-cell:selected { -fx-background-color: #D6E4F2; }
 .table-row-cell:selected .text { -fx-fill: #222222; }
